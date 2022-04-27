@@ -5,8 +5,9 @@
   <body>
     <?php
     include 'db.php';
-
-
-echo '<p>Hello World</p>'; ?> 
+    ?> 
+    <h1>
+      haii
+      </h1>
   </body>
 </html>
