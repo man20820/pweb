@@ -40,10 +40,7 @@ include 'dblocalhost.php';
 
       </div>
       <div>
-        <img src="assets/img/profil.png" class="w-72 mt-10 mb-10" style="margin-top: 10%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;" />
+        <img src="assets/img/profil.png" class="w-72 mt-10 mb-10" style="margin-top: 10%; border-bottom-left-radius: 50%;border-top-left-radius: 50%; border-bottom-right-radius: 50%;" />
       </div>
     </div>
     <div class="flex justify-center items-center"><a href="https://www.linkedin.com/in/man20820/">
@@ -55,18 +52,37 @@ include 'dblocalhost.php';
       </a></div>
   </div>
   <div class="px-20 py-5">
-    <div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-height: 6px;
-width: 40%;
-border-radius: 3px;
-margin: 16px 0px;">
+    <div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); height: 6px; width: 40%; border-radius: 3px; margin: 16px 0px;">
     </div>
   </div>
   <!--pekerjaan-->
   <div class="p-4 pb-12">
     <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
-      <div class="text-3xl">
-        Pekerjaan
+      <div class="">
+        <div class="text-3xl">
+          Pekerjaan
+        </div>
+        <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
+          <div class="flex flex-col lg:flex-row-reverse justify-between items-center mt-3 w-full p-4">
+            <?php
+            $sql = "SELECT * FROM `works`;";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              while ($row = $result->fetch_assoc()) {
+                echo "<div class='text-xl'>" . $row["position"] . "</br>";
+                echo "<div class='text-2xl'>" . $row["company"] . "</br>";
+                echo "<div class='text-xl'>" . $row["year"]  . "</br>";
+                echo "<div class='text-xl'>" . $row["description"] . "</br>";
+                // echo $row["company"] . "</br>";
+                // echo $row["year"] . "</br>";
+                // echo $row["description"] . "</br>";
+                echo "</br>";
+              }
+            }
+
+            ?>
+          </div>
+        </div>
       </div>
     </div>
   </div>
