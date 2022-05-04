@@ -4,7 +4,7 @@ include 'dblocalhost.php';
 <html>
 
 <head>
-  <title>PHP Test</title>
+  <title>PHP Test1</title>
   <script src="assets/css/tailwind"></script>
 </head>
 
