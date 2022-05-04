@@ -63,24 +63,69 @@ include 'dblocalhost.php';
           Pekerjaan
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
-          <div class="flex flex-col lg:flex-row-reverse justify-between items-center mt-3 w-full p-4">
+          <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
             <?php
             $sql = "SELECT * FROM `works`;";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
               while ($row = $result->fetch_assoc()) {
-                echo "<div class='text-xl'>" . $row["position"] . "</br>";
-                echo "<div class='text-2xl'>" . $row["company"] . "</br>";
-                echo "<div class='text-xl'>" . $row["year"]  . "</br>";
-                echo "<div class='text-xl'>" . $row["description"] . "</br>";
+                echo "<div class='text-xl'>" . $row["position"] . "</div>" . "<br>";
+                echo "<div class='text-2xl'>" . $row["company"] . "</div>" . "<br>";
+                echo "<div class='text-xl'>" . $row["year"]  . "</div>" . "<br>";
+                echo "<div class='text-xl'>" . $row["description"] . "</div>" . "<br>";
                 // echo $row["company"] . "</br>";
                 // echo $row["year"] . "</br>";
                 // echo $row["description"] . "</br>";
-                echo "</br>";
+                echo "<br>";
               }
             }
 
             ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- skill -->
+  <div class="p-4 pb-12">
+    <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
+      <div class="">
+        <div class="text-3xl">
+          Keahlian
+        </div>
+        <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
+          <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
+            <?php
+            $sql = "SELECT * FROM `skills`;";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+              while ($row = $result->fetch_assoc()) {
+                echo "<div class='text-xl'>" . $row["skill"] . "</div>" . "</br>";
+                // echo $row["company"] . "</br>";
+                // echo $row["year"] . "</br>";
+                // echo $row["description"] . "</br>";
+              }
+            }
+
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- resume -->
+  <div class="p-4 pb-12">
+    <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
+      <div class="">
+        <div class="text-3xl">
+          Resume
+        </div>
+        <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
+          <div class="flex flex-col lg:flex-row-reverse justify-between items-center mt-3 w-full p-4">
+            <div class="bg-green-500 p-4 text-xl flex justify-center items-center rounded-lg">
+              <a href="assets/document/fatkhurrahman.pdf">Unduh Resume</a>
+            </div>
           </div>
         </div>
       </div>
