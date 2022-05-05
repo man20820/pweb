@@ -1,7 +1,7 @@
 <?php
 include 'dblocalhost.php';
 ?>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <title>PHP Test1</title>
@@ -10,24 +10,24 @@ include 'dblocalhost.php';
 
 <body>
   <!--navbar-->
-  <div class="flex bg-red-900 py-2 px-20 text-2xl">
+  <div class="text-2xl flex flex-1 p-4 bg-white justify-between fixed left-0 right-0 lg:left-20 lg:right-20 items-center cursor-default">
     <div class="flex px-2 pl-6 hover:font-bold">
-      <a href="#">Fatkhurrahman</a>
+      <a href="#about">Fatkhurrahman</a>
     </div>
     <div class="flex flex-1 justify-end">
       <div class="flex px-2 hover:font-bold">
-        <a href="#">Satu</a>
+        <a href="#works">Pekerjaan</a>
       </div>
       <div class="flex px-2 hover:font-bold">
-        <a href="#">Dua</a>
+        <a href="#skills">Keahlian</a>
       </div>
       <div class="flex px-2 pr-6 hover:font-bold">
-        <a href="#">Tiga</a>
+        <a href="#resume">Resume</a>
       </div>
     </div>
   </div>
   <!--about-->
-  <div class="p-4 pb-12">
+  <div id="about" class="p-4 pb-12 pt-24">
     <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
       <div>
         <div class="text-3xl">
@@ -51,12 +51,13 @@ include 'dblocalhost.php';
         <div class="cursor-pointer"><img src="assets/img/instagram.abaad536.png" class="h-14 m-4"></div>
       </a></div>
   </div>
+  <!-- separator -->
   <div class="px-20 py-5">
     <div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); height: 6px; width: 40%; border-radius: 3px; margin: 16px 0px;">
     </div>
   </div>
   <!--pekerjaan-->
-  <div class="p-4 pb-12">
+  <div id="works" class="p-4 pb-12">
     <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
       <div class="">
         <div class="text-3xl">
@@ -86,9 +87,13 @@ include 'dblocalhost.php';
       </div>
     </div>
   </div>
-
+  <!-- separator -->
+  <div class="px-20 py-5">
+    <div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); height: 6px; width: 40%; border-radius: 3px; margin: 16px 0px;">
+    </div>
+  </div>
   <!-- skill -->
-  <div class="p-4 pb-12">
+  <div id="skills" class="p-4 pb-12">
     <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
       <div class="">
         <div class="text-3xl">
@@ -114,8 +119,13 @@ include 'dblocalhost.php';
       </div>
     </div>
   </div>
+  <!-- separator -->
+  <div class="px-20 py-5">
+    <div style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); height: 6px; width: 40%; border-radius: 3px; margin: 16px 0px;">
+    </div>
+  </div>
   <!-- resume -->
-  <div class="p-4 pb-12">
+  <div id="resume" class="p-4 pb-12">
     <div class="flex items-center flex-col justify-center md:flex-row md:justify-between container mx-auto px-4">
       <div class="">
         <div class="text-3xl">
