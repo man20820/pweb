@@ -4,8 +4,9 @@ include 'dblocalhost.php';
 <html class="scroll-smooth">
 
 <head>
-  <title>PHP Test1</title>
+  <title>Fatkhurrahman | Network Engineer</title>
   <script src="assets/css/tailwind"></script>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
 
 <body>
