@@ -63,9 +63,9 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            <p>
-              aaaa
-            </p>
+            <div class="text-2xl">
+              Training & Support Engineer
+            </div>
           </div>
         </div>
       </div>
