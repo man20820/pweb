@@ -1,6 +1,3 @@
-<?php
-include 'dblocalhost.php';
-?>
 <html class="scroll-smooth">
 
 <head>
