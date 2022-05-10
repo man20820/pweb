@@ -1,9 +1,5 @@
-haii
+# Pemrograman Web UTS
 
-# tes
-
-## tes2
-### tes3
-#### tes4
-
-#code
+```bash
+git pull
+```
