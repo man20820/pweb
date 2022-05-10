@@ -9,5 +9,5 @@ cd /var/www/html
 clone this project
 
 ```bash
-git clone https://github.com/man20820/pweb-uts.git
+git clone -b pweb https://github.com/man20820/pweb-uts.git
 ```
