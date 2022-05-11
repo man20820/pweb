@@ -132,22 +132,66 @@
             </br>
             <!-- skills -->
             <div class="text-xl">
-              Networking: Routing
+              Networking: Traffic Control
             </div>
             </br>
             <!-- skills -->
             <div class="text-xl">
-              Networking: Routing
+              Networking: Security
             </div>
             </br>
             <!-- skills -->
             <div class="text-xl">
-              Networking: Routing
+              Networking: Wireless
             </div>
             </br>
             <!-- skills -->
             <div class="text-xl">
-              Networking: Routing
+              Networking: User Management
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Programming: Javascript, NodeJS
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Programming: PHP
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Programming: Bash
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Programming: C++
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Development: Docker
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Development: Jenkins
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Development: Git
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Development: Amazon Web Services
+            </div>
+            </br><!-- skills -->
+            <div class="text-xl">
+              Development: Ubuntu
             </div>
             </br>
           </div>
