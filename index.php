@@ -76,6 +76,7 @@
             <div class="text">
               Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
             </div>
+            </br>
             <!-- work -->
             <div class="text-xl">
               Training & Support Engineer
@@ -89,6 +90,8 @@
             <div class="text">
               Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
             </div>
+            </br>
+            </br>
             <!-- work -->
             <div class="text-xl">
               Training & Support Engineer
