@@ -63,6 +63,33 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
+            <!-- work -->
+            <div class="text-xl">
+              Training & Support Engineer
+            </div>
+            <div class="text-2xl">
+              PT Citraweb Solusi Teknologi
+            </div>
+            <div class="text-xl">
+              2021 - Saat ini
+            </div>
+            <div class="text">
+              Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
+            </div>
+            <!-- work -->
+            <div class="text-xl">
+              Training & Support Engineer
+            </div>
+            <div class="text-2xl">
+              PT Citraweb Solusi Teknologi
+            </div>
+            <div class="text-xl">
+              2021 - Saat ini
+            </div>
+            <div class="text">
+              Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
+            </div>
+            <!-- work -->
             <div class="text-xl">
               Training & Support Engineer
             </div>
