@@ -63,8 +63,11 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            <div class="text-2xl">
+            <div class="text-xl">
               Training & Support Engineer
+            </div>
+            <div class="text-2xl">
+              PT Citraweb Solusi Teknologi
             </div>
             <div class="text-xl">
               2021 - Saat ini
