@@ -66,6 +66,12 @@
             <div class="text-2xl">
               Training & Support Engineer
             </div>
+            <div class="text-xl">
+              2021 - Saat ini
+            </div>
+            <div class="text">
+              Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
+            </div>
           </div>
         </div>
       </div>
