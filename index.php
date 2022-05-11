@@ -77,33 +77,34 @@
               Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
             </div>
             </br>
+            </br>
             <!-- work -->
             <div class="text-xl">
-              Training & Support Engineer
+              Technical Support Engineer
             </div>
             <div class="text-2xl">
               PT Citraweb Solusi Teknologi
             </div>
             <div class="text-xl">
-              2021 - Saat ini
+              2020 - 2021
             </div>
             <div class="text">
-              Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
+              Menjawab pertanyaan & konsultasi teknis pelanggan yang datang langsung maupun melalui telepon, surel, website, dan sosial media. Membantu dalam pengelolaan jaringan kantor, pelaksanaan acara rutin / insidental perusahaan.
             </div>
             </br>
             </br>
             <!-- work -->
             <div class="text-xl">
-              Training & Support Engineer
+              Internship
             </div>
             <div class="text-2xl">
               PT Citraweb Solusi Teknologi
             </div>
             <div class="text-xl">
-              2021 - Saat ini
+              2019 - 2020
             </div>
             <div class="text">
-              Menjelaskan materi pelatihan jaringan kepada peserta training di kelas. Membuat tutorial dan obrolan santai tentang jaringan dalam bentuk teks / artikel dan vidio / siaran langsung.
+              Membantu riset dan pengembangan. Membantu merakit perangkat keras router, server, dan pendukungnya serta memastikan bekerja dengan baik.
             </div>
           </div>
         </div>
@@ -124,9 +125,31 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            <p>
-              bbbb
-            </p>
+            <!-- skills -->
+            <div class="text-xl">
+              Networking: Routing
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Networking: Routing
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Networking: Routing
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Networking: Routing
+            </div>
+            </br>
+            <!-- skills -->
+            <div class="text-xl">
+              Networking: Routing
+            </div>
+            </br>
           </div>
         </div>
       </div>
