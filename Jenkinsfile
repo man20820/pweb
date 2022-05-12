@@ -4,11 +4,12 @@ pipeline {
         stage("Clean DB") {
             steps {
                 sh "sudo mysql -h localhost -e \"DROP DATABASE IF EXISTS ppweb_uts;\""
+                sh "sudo mysql -h localhost -e \"CREATE DATABASE IF NOT EXISTS ppweb_uts;\""
             }
         }
         stage("Store DB") {
             steps {
-                sh "sudo mysql ppweb-uts < ${WORKSPACE}/ppweb_uts.sql"
+                sh "sudo mysql ppweb_uts < ${WORKSPACE}/ppweb_uts.sql"
             }
         }
         stage("Deploy") {
