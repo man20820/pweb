@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "pweb_uts";
+$dbname = "ppweb_uts";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
