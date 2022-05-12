@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "ppweb-uts";
+$password = "1qazxsw2";
 $dbname = "ppweb_uts";
 
 // Create connection
