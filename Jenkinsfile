@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        // stage("Clean DB") {
-        //     steps {
-        //         sh "sudo mysql -D ppweb-uts -h localhost -e \"DROP DATABASE ppweb_uts;\""
-        //     }
-        // }
+        stage("Clean DB") {
+            steps {
+                sh "sudo mysql -D ppweb-uts -h localhost -e \"DROP DATABASE [IF EXISTS] ppweb_uts;\""
+            }
+        }
         stage("Store DB") {
             steps {
                 sh "sudo mysql ppweb-uts < ${WORKSPACE}/ppweb_uts.sql"
