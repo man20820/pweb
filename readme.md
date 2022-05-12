@@ -22,6 +22,29 @@ mysql -u username -p pweb_uts < pweb_uts.sql
 
 ## Jenkins
 
+create vhost, currently i'm using nginx
+
+```bash
+server {
+  listen port;
+  server_name youripaddress;
+  root /var/www/ppweb-uts;
+  index index.php index.html;
+
+  access_log /var/log/nginx/ppweb-uts.log;
+  error_log /var/log/nginx/ppweb-uts.error.log;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+  location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+  }
+}
+```
+
 add to /etc/sudoers
 
 ```bash
