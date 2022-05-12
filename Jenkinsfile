@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Clean DB") {
             steps {
-                sh "sudo mysql -D ppweb-uts -h localhost -e \"DROP DATABASE [IF EXISTS] ppweb_uts;\""
+                sh "sudo mysql -h localhost -e \"DROP DATABASE [IF EXISTS] ppweb_uts;\""
             }
         }
         stage("Store DB") {
