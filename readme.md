@@ -17,6 +17,8 @@ git clone -b ppweb-uts git@github.com:man20820/pweb.git
 import mysql
 
 ```bash
+mysql -h localhost -e "DROP DATABASE IF EXISTS ppweb_uts;"
+mysql -h localhost -e "CREATE DATABASE IF NOT EXISTS ppweb_uts;"
 mysql -u username -p pweb_uts < pweb_uts.sql
 ```
 
