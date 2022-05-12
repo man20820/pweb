@@ -1,9 +1,15 @@
-haii
+# Praktikum Pemrograman Web UTS
 
-# tes
+## Manual
 
-## tes2
-### tes3
-#### tes4
+move to www directory
 
-#code
+```bash
+cd /var/www/html
+```
+
+clone this project
+
+```bash
+git clone -b ppweb-uts git@github.com:man20820/pweb.git
+```
