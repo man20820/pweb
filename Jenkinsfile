@@ -14,8 +14,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/html/ppweb-uts"
-                sh "sudo cp -r ${WORKSPACE}/ /var/www/html/ppweb-uts/"
+                sh "sudo rm -rf /var/www/ppweb-uts"
+                sh "sudo cp -r ${WORKSPACE}/ /var/www/ppweb-uts/"
             }
         }
     }
