@@ -3,12 +3,12 @@ pipeline {
     stages {
         // stage("Clean DB") {
         //     steps {
-        //         sh "sudo mysql -D ppweb-uts -h localhost -e \"DROP DATABASE ppweb-uts;\""
+        //         sh "sudo mysql -D ppweb-uts -h localhost -e \"DROP DATABASE ppweb_uts;\""
         //     }
         // }
         stage("Store DB") {
             steps {
-                sh "sudo mysql ppweb-uts < ${WORKSPACE}/ppweb-uts.sql"
+                sh "sudo mysql ppweb-uts < ${WORKSPACE}/ppweb_uts.sql"
             }
         }
         stage("Deploy") {
