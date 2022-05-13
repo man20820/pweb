@@ -2,19 +2,19 @@
 
 ## Manual
 
-move to www directory
+### move to www directory
 
 ```bash
 cd /var/www/html
 ```
 
-clone this project
+### clone this project
 
 ```bash
 git clone -b ppweb-uts git@github.com:man20820/pweb.git
 ```
 
-import mysql
+### import mysql
 
 ```bash
 mysql -h localhost -e "DROP DATABASE IF EXISTS ppweb_uts;"
