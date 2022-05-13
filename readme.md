@@ -16,7 +16,7 @@ git clone -b pweb-uts git@github.com:man20820/pweb.git
 
 ## Jenkins
 
-create vhost, currently i'm using nginx
+### create vhost, currently i'm using nginx
 
 ```bash
 server {
@@ -39,10 +39,19 @@ server {
 }
 ```
 
-add to /etc/sudoers
+### add to /etc/sudoers
 
 ```bash
 #ppweb-uts
 jenkins ALL=(ALL) NOPASSWD: /bin/rm -rf /var/www/pweb-uts
 jenkins ALL=(ALL) NOPASSWD: /bin/cp -r /var/lib/jenkins/workspace/pweb-uts/ /var/www/pweb-uts/
 ```
+
+### create pipeline project
+
+Built Triggers:  GitHub hook trigger for GITScm polling
+Definition: Pipeline script from SCM
+SCM: Git
+Repositories: git@github.com:man20820/pweb-uts.git
+Credentials: contact me on man@tkjpedia.com
+Branch: pweb-uts
