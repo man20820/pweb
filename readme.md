@@ -49,7 +49,7 @@ jenkins ALL=(ALL) NOPASSWD: /bin/cp -r /var/lib/jenkins/workspace/pweb-uts/ /var
 
 ### create pipeline project
 
-Built Triggers:  GitHub hook trigger for GITScm polling
+Built Triggers:  GitHub hook trigger for GITScm polling__
 Definition: Pipeline script from SCM
 SCM: Git
 Repositories: git@github.com:man20820/pweb-uts.git
