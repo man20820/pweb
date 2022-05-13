@@ -1,4 +1,4 @@
-# Pemrograman Web UTS
+# Praktikum Pemrograman Web UTS
 
 ## Manual
 
