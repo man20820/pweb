@@ -1,0 +1,18 @@
+CRITICAL - 2022-05-31 18:52:19 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\spark(45): require('E:\\Belajar\\prak...')
+#4 {main}
+CRITICAL - 2022-05-31 18:52:37 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\spark(45): require('E:\\Belajar\\prak...')
+#4 {main}
+CRITICAL - 2022-05-31 18:53:11 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\spark(45): require('E:\\Belajar\\prak...')
+#4 {main}
