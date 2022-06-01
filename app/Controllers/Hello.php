@@ -11,6 +11,8 @@ class Hello extends Controller
     {
         $model = new Hello_model();
         $s = $model->string;
-        echo view('hello_view', ['text' => $s]);
+        $nim = $model->stringNIM;
+        $nama = $model->stringNama;
+        echo view('hello_view', ['text' => $s, 'nim' => $nim, 'nama' => $nama]);
     }
 }

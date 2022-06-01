@@ -11,6 +11,10 @@
 <body>
     <p>
         <?php echo $text ?>
+        <br>
+        <?php echo $nim ?>
+        <br>
+        <?php echo $nama ?>
     </p>
 </body>
 
