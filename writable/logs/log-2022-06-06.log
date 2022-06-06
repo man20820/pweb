@@ -1,0 +1,113 @@
+CRITICAL - 2022-06-06 10:11:53 --> Cannot call constructor
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#5 {main}
+CRITICAL - 2022-06-06 10:12:03 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 28, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:12:05 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 28, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:12:20 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 28, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:12:29 --> Call to undefined method App\Controllers\Login::view()
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#5 {main}
+CRITICAL - 2022-06-06 10:12:40 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 28, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:13:44 --> Cannot call constructor
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(809): App\Controllers\Login->__construct()
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#5 {main}
+CRITICAL - 2022-06-06 10:13:48 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 29, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:15:43 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 29, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:16:27 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-06 10:17:12 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-06 10:23:20 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 30, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:24:25 --> Undefined property: App\Controllers\Login::$load
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 30, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:24:33 --> Undefined property: App\Controllers\Login::$model
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\app\Controllers\Login.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 30, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(832): App\Controllers\Login->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-06 10:24:51 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-06 10:25:23 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-06 10:25:34 --> syntax error, unexpected 'dd' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('login')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('login')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\codeigniter4-CodeIgniter4-v4.1.9-0-g202f41a\codeigniter4-CodeIgniter4-202f41a\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
