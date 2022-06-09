@@ -15,6 +15,12 @@
         <?php echo $nim ?>
         <br>
         <?php echo $nama ?>
+        <br>
+        <?php echo $username ?>
+        <br>
+        <?php echo $email ?>
+        <br>
+        <?php echo $roles ?>
     </p>
 </body>
 

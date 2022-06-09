@@ -1,0 +1,212 @@
+ERROR - 2022-06-09 09:28:04 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-06-09 09:28:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\vendor\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#12 {main}
+CRITICAL - 2022-06-09 09:32:25 --> strong_password is not a valid rule.
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', 'rahasia', Array, Array)
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\vendor\myth\auth\src\Controllers\AuthController.php(172): CodeIgniter\Controller->validate(Array)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptRegister()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#9 {main}
+CRITICAL - 2022-06-09 09:34:17 --> strong_password is not a valid rule.
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '!Qwerty123', Array, Array)
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\vendor\myth\auth\src\Controllers\AuthController.php(172): CodeIgniter\Controller->validate(Array)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptRegister()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#9 {main}
+ERROR - 2022-06-09 09:41:23 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 09:41:47 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 09:47:12 --> Table 'mvc_ci.users' doesn't exist
+ERROR - 2022-06-09 09:48:37 --> Column count doesn't match value count at row 1
+ERROR - 2022-06-09 09:49:06 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 09:49:19 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 10:01:06 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-06-09 10:07:44 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2022-06-09 10:30:35 --> Cannot declare class App\Database\Seeds\Seeder because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-09 10:30:46 --> Cannot declare class App\Database\Seeds\Seeder because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-06-09 10:31:13 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 10:33:40 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 10:34:33 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 10:35:05 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+ERROR - 2022-06-09 10:35:16 --> Duplicate entry 'man@tkjpedia.com' for key 'email'
+CRITICAL - 2022-06-09 10:42:43 --> Cannot declare class App\Database\Seeds\GroupSeeder, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-06-09 10:43:17 --> Duplicate entry '1' for key 'PRIMARY'
+ERROR - 2022-06-09 10:43:27 --> Table 'mvc_ci.auth_groups_permision' doesn't exist
+ERROR - 2022-06-09 10:44:11 --> Table 'mvc_ci.auth_groups_permisions' doesn't exist
+ERROR - 2022-06-09 10:44:23 --> Unknown column 'permision_id' in 'field list'
+ERROR - 2022-06-09 10:44:43 --> Cannot add or update a child row: a foreign key constraint fails (`mvc_ci`.`auth_groups_permissions`, CONSTRAINT `auth_groups_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE)
+ERROR - 2022-06-09 10:47:52 --> Table 'mvc_ci.auth_permision' doesn't exist
+CRITICAL - 2022-06-09 11:19:30 --> Undefined property: App\Controllers\Hello::$session
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:22:03 --> Undefined variable: auth
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:23:46 --> Undefined property: App\Controllers\Hello::$session
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:23:47 --> Undefined property: App\Controllers\Hello::$session
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:24:37 --> Undefined property: App\Controllers\Hello::$session
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:28:52 --> Undefined variable: auth
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:28:53 --> Undefined variable: auth
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+CRITICAL - 2022-06-09 11:29:04 --> Undefined variable: auth
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\Belajar\\prak...', 16, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}
+ERROR - 2022-06-09 11:37:46 --> Table 'mvc_ci.groups_users' doesn't exist
+CRITICAL - 2022-06-09 11:37:46 --> Table 'mvc_ci.groups_users' doesn't exist
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#10 {main}
+ERROR - 2022-06-09 11:38:27 --> Unknown column 'auth_groups_users.auth_group_id' in 'on clause'
+CRITICAL - 2022-06-09 11:38:27 --> Unknown column 'auth_groups_users.auth_group_id' in 'on clause'
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#10 {main}
+ERROR - 2022-06-09 11:39:19 --> Unknown column 'groups_users.group_id' in 'on clause'
+CRITICAL - 2022-06-09 11:39:19 --> Unknown column 'groups_users.group_id' in 'on clause'
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#10 {main}
+CRITICAL - 2022-06-09 11:39:58 --> syntax error, unexpected '}', expecting ';'
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\Belajar\\prak...')
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Hell...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Hell...')
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(12): spl_autoload_call('App\\Models\\Hell...')
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#9 {main}
+CRITICAL - 2022-06-09 11:40:07 --> Array to string conversion
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Views\hello_view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'E:\\Belajar\\prak...', 19, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\View\View.php(210): include('E:\\Belajar\\prak...')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Common.php(1089): CodeIgniter\View\View->render('hello_view', Array, true)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(21): view('hello_view', Array)
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#10 {main}
+CRITICAL - 2022-06-09 11:43:18 --> Undefined index: name
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Views\hello_view.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\Belajar\\prak...', 19, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\View\View.php(210): include('E:\\Belajar\\prak...')
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Common.php(1089): CodeIgniter\View\View->render('hello_view', Array, true)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(22): view('hello_view', Array)
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#6 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#10 {main}
+CRITICAL - 2022-06-09 11:48:07 --> Undefined index: usernamea
+#0 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\app\Controllers\Hello.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'E:\\Belajar\\prak...', 22, Array)
+#1 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(832): App\Controllers\Hello->index()
+#2 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\Belajar\praktikum pemrograman web\20220531 mvc ci\pweb\system\Commands\Server\rewrite.php(43): require_once('E:\\Belajar\\prak...')
+#6 {main}

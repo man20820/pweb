@@ -13,6 +13,20 @@ class Hello extends Controller
         $s = $model->string;
         $nim = $model->stringNIM;
         $nama = $model->stringNama;
-        echo view('hello_view', ['text' => $s, 'nim' => $nim, 'nama' => $nama]);
+        $data = $model->join()->get()->getResultArray();
+        //dd($roles);
+        echo view('hello_view', [
+            'text' => $s,
+            'nim' => $nim,
+            'nama' => $nama,
+            'username' => $data[0]['username'],
+            'email' => $data[0]['email'],
+            'roles' => $data[0]['name'],
+        ]);
+    }
+
+    public function dashboard()
+    {
+        echo view('hello_view');
     }
 }
