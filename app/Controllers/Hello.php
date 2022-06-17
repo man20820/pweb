@@ -27,6 +27,6 @@ class Hello extends Controller
 
     public function dashboard()
     {
-        echo view('hello_view');
+        echo view('dashboard/admin_view');
     }
 }

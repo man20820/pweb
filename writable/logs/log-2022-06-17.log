@@ -1,0 +1,6 @@
+CRITICAL - 2022-06-17 04:44:51 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\belajar\pweb\mvc-ci\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\belajar\pweb\mvc-ci\spark(45): require('D:\\belajar\\pweb...')
+#4 {main}
