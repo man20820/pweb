@@ -9,20 +9,21 @@ class Hello extends Controller
 {
     public function index()
     {
-        $model = new Hello_model();
-        $s = $model->string;
-        $nim = $model->stringNIM;
-        $nama = $model->stringNama;
-        $data = $model->join()->get()->getResultArray();
-        //dd($roles);
-        echo view('hello_view', [
-            'text' => $s,
-            'nim' => $nim,
-            'nama' => $nama,
-            'username' => $data[0]['username'],
-            'email' => $data[0]['email'],
-            'roles' => $data[0]['name'],
-        ]);
+        // $model = new Hello_model();
+        // $s = $model->string;
+        // $nim = $model->stringNIM;
+        // $nama = $model->stringNama;
+        // $data = $model->join()->get()->getResultArray();
+        // //dd($roles);
+        // echo view('hello_view', [
+        //     'text' => $s,
+        //     'nim' => $nim,
+        //     'nama' => $nama,
+        //     'username' => $data[0]['username'],
+        //     'email' => $data[0]['email'],
+        //     'roles' => $data[0]['name'],
+        // ]);
+        echo view('home/index_view');
     }
 
     public function dashboard()
