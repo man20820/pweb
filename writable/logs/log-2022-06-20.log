@@ -1,0 +1,236 @@
+CRITICAL - 2022-06-20 04:47:20 --> Undefined property: App\Controllers\Hello::$session
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\belajar\\pweb...', 31, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 04:47:38 --> Undefined property: App\Controllers\Hello::$session
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\belajar\\pweb...', 32, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+ERROR - 2022-06-20 07:23:34 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-20 07:23:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\belajar\pweb\mvc-ci\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\belajar\pweb\mvc-ci\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\belajar\pweb\mvc-ci\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 D:\belajar\pweb\mvc-ci\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 D:\belajar\pweb\mvc-ci\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 D:\belajar\pweb\mvc-ci\vendor\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#12 {main}
+CRITICAL - 2022-06-20 07:24:14 --> Undefined variable: text
+#0 D:\belajar\pweb\mvc-ci\app\Views\hello_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\belajar\\pweb...', 13, Array)
+#1 D:\belajar\pweb\mvc-ci\system\View\View.php(210): include('D:\\belajar\\pweb...')
+#2 D:\belajar\pweb\mvc-ci\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\belajar\pweb\mvc-ci\system\Common.php(1089): CodeIgniter\View\View->render('hello_view', Array, true)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(37): view('hello_view', Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+CRITICAL - 2022-06-20 07:25:20 --> Invalid file: index_view.php
+#0 D:\belajar\pweb\mvc-ci\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index_view.php')
+#1 D:\belajar\pweb\mvc-ci\system\Common.php(1089): CodeIgniter\View\View->render('index_view', Array, true)
+#2 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(39): view('index_view')
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#4 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#8 {main}
+CRITICAL - 2022-06-20 07:26:46 --> Undefined offset: 1
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\belajar\\pweb...', 35, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 07:38:15 --> Undefined variable: session
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\belajar\\pweb...', 32, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 07:39:27 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\belajar\\pweb...')
+#1 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#9 {main}
+CRITICAL - 2022-06-20 07:40:31 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\belajar\\pweb...')
+#1 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#9 {main}
+CRITICAL - 2022-06-20 07:40:44 --> syntax error, unexpected '=', expecting ')'
+#0 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\belajar\\pweb...')
+#1 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#9 {main}
+CRITICAL - 2022-06-20 07:42:03 --> syntax error, unexpected '=', expecting ')'
+#0 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\belajar\\pweb...')
+#1 D:\belajar\pweb\mvc-ci\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#9 {main}
+ERROR - 2022-06-20 07:48:25 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-06-20 07:48:25 --> Column 'id' in where clause is ambiguous
+#0 D:\belajar\pweb\mvc-ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\belajar\pweb\mvc-ci\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+ERROR - 2022-06-20 07:48:46 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-06-20 07:48:46 --> Column 'id' in where clause is ambiguous
+#0 D:\belajar\pweb\mvc-ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\belajar\pweb\mvc-ci\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+CRITICAL - 2022-06-20 07:52:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): App\Models\Hello_model->join()
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+ERROR - 2022-06-20 07:53:50 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-06-20 07:53:50 --> Column 'id' in where clause is ambiguous
+#0 D:\belajar\pweb\mvc-ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\belajar\pweb\mvc-ci\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+ERROR - 2022-06-20 07:54:29 --> Column 'id' in where clause is ambiguous
+CRITICAL - 2022-06-20 07:54:29 --> Column 'id' in where clause is ambiguous
+#0 D:\belajar\pweb\mvc-ci\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\belajar\pweb\mvc-ci\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\belajar\pweb\mvc-ci\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+CRITICAL - 2022-06-20 07:55:34 --> Undefined offset: 0
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\belajar\\pweb...', 35, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 07:57:41 --> Undefined offset: 1
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\belajar\\pweb...', 38, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 07:57:55 --> Undefined index: username
+#0 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\belajar\\pweb...', 38, Array)
+#1 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#2 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#3 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#6 {main}
+CRITICAL - 2022-06-20 07:59:16 --> Undefined variable: name
+#0 D:\belajar\pweb\mvc-ci\app\Views\dashboard\admin_view.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\belajar\\pweb...', 130, Array)
+#1 D:\belajar\pweb\mvc-ci\system\View\View.php(210): include('D:\\belajar\\pweb...')
+#2 D:\belajar\pweb\mvc-ci\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\belajar\pweb\mvc-ci\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/admin...', Array, true)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(40): view('dashboard/admin...', Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+CRITICAL - 2022-06-20 08:02:55 --> Undefined variable: name
+#0 D:\belajar\pweb\mvc-ci\app\Views\dashboard\admin_view.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\belajar\\pweb...', 130, Array)
+#1 D:\belajar\pweb\mvc-ci\system\View\View.php(210): include('D:\\belajar\\pweb...')
+#2 D:\belajar\pweb\mvc-ci\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\belajar\pweb\mvc-ci\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/admin...', Array, true)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(41): view('dashboard/admin...', Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}
+CRITICAL - 2022-06-20 08:03:08 --> Undefined variable: level
+#0 D:\belajar\pweb\mvc-ci\app\Views\dashboard\admin_view.php(132): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\belajar\\pweb...', 132, Array)
+#1 D:\belajar\pweb\mvc-ci\system\View\View.php(210): include('D:\\belajar\\pweb...')
+#2 D:\belajar\pweb\mvc-ci\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\belajar\pweb\mvc-ci\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/admin...', Array, true)
+#4 D:\belajar\pweb\mvc-ci\app\Controllers\Hello.php(41): view('dashboard/admin...', Array)
+#5 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(832): App\Controllers\Hello->admin()
+#6 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hello))
+#7 D:\belajar\pweb\mvc-ci\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\belajar\pweb\mvc-ci\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\belajar\pweb\mvc-ci\system\Commands\Server\rewrite.php(43): require_once('D:\\belajar\\pweb...')
+#10 {main}

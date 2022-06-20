@@ -23,11 +23,23 @@ class Hello extends Controller
         //     'email' => $data[0]['email'],
         //     'roles' => $data[0]['name'],
         // ]);
-        echo view('home/index_view');
+        //echo view('home/index_view');
     }
 
-    public function dashboard()
+    public function admin()
     {
-        echo view('dashboard/admin_view');
+        $session = session();
+        $model = new Hello_model();
+        $session = $session->get('logged_in');
+        //dd($session);
+        $data = $model->join()->getWhere(['user_id' => $session])->getResultArray();
+        //dd($data);
+        echo view('dashboard/admin_view', [
+            'username' => $data[0]['username'],
+            'namalengkap' => $data[0]['namalengkap'],
+            'email' => $data[0]['email'],
+            'roles' => $data[0]['name'],
+        ]);
+        //echo view('dashboard/admin_view');
     }
 }
