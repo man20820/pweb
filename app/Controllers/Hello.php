@@ -33,7 +33,7 @@ class Hello extends Controller
         $session = $session->get('logged_in');
         //dd($session);
         $data = $model->join()->getWhere(['user_id' => $session])->getResultArray();
-        //dd($data);
+        dd($data);
         echo view('dashboard/admin_view', [
             'username' => $data[0]['username'],
             'namalengkap' => $data[0]['namalengkap'],
