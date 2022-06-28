@@ -23,7 +23,8 @@ class Hello extends Controller
         //     'email' => $data[0]['email'],
         //     'roles' => $data[0]['name'],
         // ]);
-        //echo view('home/index_view');
+        echo view('home/index');
+        //dd("aaa");
     }
 
     public function admin()
@@ -33,10 +34,10 @@ class Hello extends Controller
         $session = $session->get('logged_in');
         //dd($session);
         $data = $model->join()->getWhere(['user_id' => $session])->getResultArray();
-        dd($data);
+        //dd($data);
         echo view('dashboard/admin_view', [
             'username' => $data[0]['username'],
-            'namalengkap' => $data[0]['namalengkap'],
+            'full_name' => $data[0]['full_name'],
             'email' => $data[0]['email'],
             'roles' => $data[0]['name'],
         ]);

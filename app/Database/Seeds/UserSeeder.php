@@ -12,6 +12,7 @@ class UserSeeder extends Seeder
             'id'    => 1,
             'email'    => 'man@tkjpedia.com',
             'username' => 'man20820',
+            'full_name' => 'Fatkhurrahman',
             'password_hash' => password_hash('!Qwerty123', PASSWORD_DEFAULT),
             'active' => '1',
         ];
