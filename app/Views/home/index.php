@@ -33,7 +33,7 @@
           </br>
           <span class="text-pink-500 text-4xl">Fatkhurrahman.</span>
           </br>
-          Saya sangat menyukai tentang jaringan, iot, virtualisasi, dan pemrograman. Saya senang mempelajari teknologi baru, penyelesaian masalah, dan selalu belajar untuk mengasah kemampuan.
+          <?= $about; ?>
         </div>
 
       </div>
@@ -63,7 +63,7 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            
+            <?= $job; ?>
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            
-          </div>
+          <?= $skill; ?>
+        </div>
         </div>
       </div>
     </div>

@@ -116,7 +116,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Hello <?= $full_name; ?></h3>
+                            <h3 class="card-title">Hello </h3>
                             <div class="card-tools">
                                 <!-- Buttons, labels, and many other things can be placed here! -->
                                 <!-- Here is a label for example -->
@@ -126,10 +126,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <p>Username: <?= $username; ?></p>
-                            <p>Name: <?= $full_name; ?></p>
-                            <p>Email: <?= $email; ?></p>
-                            <p>Level: <?= $roles; ?></p>
+                            
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
