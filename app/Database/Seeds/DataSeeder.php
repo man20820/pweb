@@ -13,5 +13,6 @@ class DataSeeder extends Seeder
         $this->call('PermisionSeeder');
         $this->call('GroupPermisionSeeder');
         $this->call('GroupUsersSeeder');
+        $this->call('ProfileSeeder');
     }
 }
