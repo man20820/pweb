@@ -4,25 +4,12 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\Hello_model;
+use App\Models\ProfileModel;
 
 class Hello extends Controller
 {
     public function index()
     {
-        // $model = new Hello_model();
-        // $s = $model->string;
-        // $nim = $model->stringNIM;
-        // $nama = $model->stringNama;
-        // $data = $model->join()->get()->getResultArray();
-        // //dd($roles);
-        // echo view('hello_view', [
-        //     'text' => $s,
-        //     'nim' => $nim,
-        //     'nama' => $nama,
-        //     'username' => $data[0]['username'],
-        //     'email' => $data[0]['email'],
-        //     'roles' => $data[0]['name'],
-        // ]);
         echo view('home/index');
         //dd("aaa");
     }
@@ -38,5 +25,16 @@ class Hello extends Controller
         
         echo view('dashboard/admin_view');
         //echo view('dashboard/admin_view');
+    }
+
+    public function edit() {
+        $profile = new ProfileModel();
+        $data['profile'] = $profile->getWhere()->getResultArray();
+        //dd($data);
+
+        $profile->update('1', [
+            "about" => $this->request->getPost('about')
+        ])
+        return redirect('admin')
     }
 }

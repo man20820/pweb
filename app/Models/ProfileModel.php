@@ -46,4 +46,12 @@ class ProfileModel extends Model
             ->join('skills', 'profiles.id = skills.profile_id')
             ->join('jobs', 'jobs.profile_id = profiles.id');
     }
+
+    public function skills() {
+        return $this->db->table('skills');
+    }
+
+    public function jobs() {
+        return $this->db->table('jobs');
+    }
 }

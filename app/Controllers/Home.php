@@ -13,11 +13,14 @@ class Home extends BaseController
         // $session = $session->get('logged_in');
         //dd($session);
         $data = $model->join()->getWhere(['profiles.id' => '1'])->getResultArray();
-        //dd($data);
+        $skills = $model->skills()->getWhere()->getResultArray();
+        $jobs = $model->jobs()->getWhere()->getResultArray();
+        // dd($skills);
+        // dd($data);
         $data1 = [
             'about' => $data[0]['about'],
-            'skill' => $data[0]['skill'],
-            'job' => $data[0]['job'],
+            'skill' => $skills,
+            'job' => $jobs,
         ];
         return view('home/index', $data1);
     }

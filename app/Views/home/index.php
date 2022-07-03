@@ -63,7 +63,13 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-            <?= $job; ?>
+          <?php 
+          foreach ($job as $value) {
+            // dd($value);
+            // print_r($value['skill']);
+            echo $value['job'];
+            echo "</br>"; 
+          }; ?>
           </div>
         </div>
       </div>
@@ -83,7 +89,13 @@
         </div>
         <div class="text-base flex flex-wrap justify-between items-center ml-8 mr-0">
           <div class="flex flex-col lg:flex-col justify-between mt-3 w-full p-4">
-          <?= $skill; ?>
+          <?php 
+          foreach ($skill as $value) {
+            // dd($value);
+            // print_r($value['skill']);
+            echo $value['skill'];
+            echo "</br>"; 
+          }; ?> 
         </div>
         </div>
       </div>
