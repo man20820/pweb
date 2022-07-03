@@ -117,6 +117,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">Hello </h3>
+
                             <div class="card-tools">
                                 <!-- Buttons, labels, and many other things can be placed here! -->
                                 <!-- Here is a label for example -->
@@ -124,9 +125,130 @@
                             </div>
                             <!-- /.card-tools -->
                         </div>
+
                         <!-- /.card-header -->
                         <div class="card-body">
-                            
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Quick Example</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form action="/admin/edit/" method="post" id="about" name="about">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="about">About</label>
+                                            <input type="text" class="form-control" id="about" value="<?= $about; ?>">
+                                        </div>
+                                    </div>
+                                    <!-- /.card-body -->
+
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /.card -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Bordered Table</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <button type="submit" class="btn btn-primary">Add</button>
+
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Jobs</th>
+                                                <th style="width: 40px">Label</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            foreach ($job as $value) {
+                                                // dd($value);
+                                                // print_r($value['skill']);
+                                                echo "<tr>";
+                                                echo "<td>";
+                                                echo $value['id'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo $value['job'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo '<button type="submit" class="btn btn-primary">Edit</button>';
+                                                echo '<button type="submit" class="btn btn-warning">Delete</button>';
+                                                echo "</td>";
+
+                                                echo "</tr>";
+                                            }; ?>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer clearfix">
+                                    <ul class="pagination pagination-sm m-0 float-right">
+                                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <div class=card-body>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Bordered Table</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Skill</th>
+                                                <th style="width: 40px">Label</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            foreach ($skill as $value) {
+                                                // dd($value);
+                                                // print_r($value['skill']);
+                                                echo "<tr>";
+                                                echo "<td>";
+                                                echo $value['id'];
+                                                echo "</td>";
+                                                echo "<td>";
+                                                echo $value['skill'];
+                                                echo "</br>";
+
+                                                echo "</td>";
+                                                echo "</tr>";
+                                            }; ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer clearfix">
+                                    <ul class="pagination pagination-sm m-0 float-right">
+                                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.card -->
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">

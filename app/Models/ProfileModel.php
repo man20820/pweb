@@ -14,7 +14,7 @@ class ProfileModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['about'];
 
     // Dates
     protected $useTimestamps = false;
@@ -47,11 +47,18 @@ class ProfileModel extends Model
             ->join('jobs', 'jobs.profile_id = profiles.id');
     }
 
-    public function skills() {
+    public function skills()
+    {
         return $this->db->table('skills');
     }
 
-    public function jobs() {
+    public function jobs()
+    {
         return $this->db->table('jobs');
+    }
+
+    public function about()
+    {
+        return $this->db->table('profiles');
     }
 }
